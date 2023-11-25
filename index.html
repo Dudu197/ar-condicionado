@@ -4,6 +4,16 @@
 		<link rel="icon" type="image/x-icon" href="images/favico.ico"/>
 	</head>
 	<body>
-		<img src="images/ar-condicionado.gif"/>
+		<button onclick="sfx()">Ativar modo realismo</button> <br />
+		<img src="images/ar-condicionado.gif" style="display: block; margin: 0 auto;" />
+		<audio id="sfx">
+		  <source src="sounds/sfx.mp3" type="audio/mpeg">
+		</audio>
+
+		<script type="text/javascript">
+			function sfx(){
+				document.getElementById("sfx").play();
+			}
+		</script>
 	</body>
 </html>
